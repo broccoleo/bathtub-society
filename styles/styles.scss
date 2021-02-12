@@ -111,7 +111,6 @@ section {
     button {
         width: 260px;
         height: 40px;
-        // background: linear-gradient($soft-pink, white);
         background-color: white;
         border: solid 2px $background-decor;
         font-size: $button-size;
@@ -123,6 +122,25 @@ section {
             color: white;
             background-color: $background-decor;
         }
+    }
+}
+
+.review {
+    width: 50%;
+    text-align: center;
+    font-family: $primary-font;
+    color: #562121;
+
+    .text {
+        letter-spacing: 2px;
+        font-size: $section-title;
+        font-style: italic;
+    }
+
+    .author {
+        margin-top: 10px;
+        letter-spacing: 1px;
+        font-weight: bold;
     }
 }
 
@@ -151,7 +169,7 @@ section {
 
         img {
             width: 190px;
-            height: 200px;
+            height: 160px;
             margin: 5px;
         }
     }
@@ -175,14 +193,52 @@ section {
 }
 
 .about {
+    p {
+        color: $emphasis;
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-family: $primary-font;
+    }
+
+    &--icon {
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+        margin-bottom: 10px;
+    }
+
+    a {
+        color: $emphasis;
+        text-decoration: none;
+        letter-spacing: 1px;
+        font-family: $primary-font;
+        font-weight: bold;
+
+        &:hover {
+            color: $soft-pink;
+        }
+    }
+
     ul {
         list-style-type: none;
         display: flex;
 
         li {
-            margin-right: 150px;
             color: white;
             font-family: $primary-font;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        li:nth-child(1) {
+            margin-right: 150px;
+        }
+
+        li:nth-child(2) {
+            margin-right: 150px;
         }
     }
 }
@@ -201,5 +257,12 @@ footer {
         li {
             margin-left: 20px;
         }
+    }
+}
+
+@media screen and (max-width:600px) {
+    section {
+        height: 150px;
+        width: 100%;
     }
 }

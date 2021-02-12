@@ -116,6 +116,23 @@ section {
   background-color: #DC8D8D;
 }
 
+.review {
+  width: 50%;
+  text-align: center;
+  font-family: "Alegreya";
+  color: #562121;
+}
+.review .text {
+  letter-spacing: 2px;
+  font-size: 18px;
+  font-style: italic;
+}
+.review .author {
+  margin-top: 10px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
 .buildset,
 .about {
   background-color: #E0A3A3;
@@ -142,7 +159,7 @@ section {
 .buildset div img,
 .about div img {
   width: 190px;
-  height: 200px;
+  height: 160px;
   margin: 5px;
 }
 .buildset button,
@@ -162,14 +179,46 @@ section {
   background-color: #DC8D8D;
 }
 
+.about p {
+  color: #854242;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: "Alegreya";
+}
+.about--icon {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+.about a {
+  color: #854242;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-family: "Alegreya";
+  font-weight: bold;
+}
+.about a:hover {
+  color: #EEDDDD;
+}
 .about ul {
   list-style-type: none;
   display: flex;
 }
 .about ul li {
-  margin-right: 150px;
   color: white;
   font-family: "Alegreya";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.about ul li:nth-child(1) {
+  margin-right: 150px;
+}
+.about ul li:nth-child(2) {
+  margin-right: 150px;
 }
 
 footer {
@@ -185,4 +234,11 @@ footer ul {
 }
 footer ul li {
   margin-left: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  section {
+    height: 150px;
+    width: 100%;
+  }
 }

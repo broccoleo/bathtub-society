@@ -1,88 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/styles.css" />
-    <title>The Bathtub Society</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul class="icons icons--left">
-          <li>
-            <a href="/expandmenu"><img src="/burger.svg" alt="Menu" /></a>
-          </li>
-          <li>
-            <a href="/expandsearchbar"
-              ><img src="/search.svg" alt="Search"
-            /></a>
-          </li>
-        </ul>
-        <div id="logo">
-          <h1>The Bathtub Society</h1>
-          <h3>the modern day spa, for the modern-day human</h3>
-        </div>
-        <ul class="icons icons--right">
-          <li>
-            <a href="/login"
-              ><img src="/user.svg" alt="Log in or create an account"
-            /></a>
-          </li>
-          <li>
-            <a href="/shoppingcard"
-              ><img src="/luggage.svg" alt="View your shopping"
-            /></a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-        <div class="container">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/styles/styles.css" />
+  <title>The Bathtub Society</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul class="icons icons--left">
+        <li>
+          <a href="/expandmenu"><img src="/burger.svg" alt="Menu" /></a>
+        </li>
+        <li>
+          <a href="/expandsearchbar"><img src="/search.svg" alt="Search" /></a>
+        </li>
+      </ul>
+      <div id="logo">
+        <h1>The Bathtub Society</h1>
+        <h3>the modern day spa, for the modern-day human</h3>
+      </div>
+      <ul class="icons icons--right">
+        <li>
+          <a href="/login"><img src="/user.svg" alt="Log in or create an account" /></a>
+        </li>
+        <li>
+          <a href="/shoppingcard"><img src="/luggage.svg" alt="View your shopping" /></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
       <section class="promotion">
-          <div class="promotion promotion--left"><h2>spread the love</h2>
-            <p>No matter who you're celebrating Valentine's with, we've got you covered.</p>
-        <a href="/shop">shop now</a></div>
-          <div class="promotion promotion--right">
-<div><img src="" alt="">pretty picture placeholder</div></div>
+        <div class="promotion promotion--left">
+          <h2>spread the love</h2>
+          <p>No matter who you're celebrating Valentine's with, we've got you covered.</p>
+          <a href="/shop">shop now</a>
+        </div>
+        <div class="promotion promotion--right">
+          <div><img src="" alt="">pretty picture placeholder</div>
+        </div>
       </section>
       <section class="buildset">
         <h2>the best bath of your life starts here</h2>
         <div class="set-items">
-          <img src="/candle.png" alt="Scented candle" />
-          <img src="/candle.png" alt="Bath bomb" />
-          <img src="/candle.png" alt="Bath salts" />
-          <img src="/candle.png" alt="Bath companion" />
+          <img src="/petalcandle.png" alt="Scented candle" />
+          <img src="/lavendercandle.png" alt="Bath bomb" />
+          <img src="/petalcandle.png" alt="Bath salts" />
+          <img src="/lavendercandle.png" alt="Bath companion" />
         </div>
         <div class="btn btn--buildset">
           <button>Build Your Own Set</button>
         </div>
       </section>
       <section class="reviews">
-<h2>see what others are saying</h2>
-<div class="btn btn--review">
-    <button>write a review</button>
-  </div>
+        <h2>see what others are saying</h2>
+        <div class="review">
+          <p class="text">Curabitur pulvinar nunc et arcu convallis, quis bibendum nibh eleifend. In sit amet leo eu diam vestibulum facilisis eget at tortor. Donec eu dui scelerisque, dapibus ex nec, venenatis orci. Nullam eros nisi, gravida ut consequat at, fringilla vitae quam. In libero dui, blandit nec tincidunt a, aliquam fringilla augue. Proin vulputate nibh erat!</p>
+          <p class="author">Carolina</p>
+        </div>
+        <div class="btn btn--review">
+          <button>write a review</button>
+        </div>
       </section>
 
       <section class="about">
-<h2>about the bathtub society</h2>
-<ul><li>organic and completely natural</li>
-<li>socially responsible</li>
-<li>vegan and cruelty free</li></ul>
+        <h2>about the bathtub society</h2>
+        <p>You don't have to compromise on your values to have a relaxing bubble bath.<br /> We care about the same
+          things you do. All of your products are:</p>
+        <ul>
+          <li><div class="about about--icon"></div>
+          <div>organic, toxin-free and natural</div></li>
+          <li>
+            <div class="about about--icon"></div>
+          <div>socially responsible</div></li>
+          <li><div class="about about--icon"></div>
+            <div>vegan and cruelty free</div></li>
+        </ul>
+        <a href="http://">learn more about our commitments</a>
       </section>
 
-    </main>
-    <footer>
-      <ul>
-        <li>Contact us</li>   
-             <li>Terms and Conditions</li>
-<li>Privacy Policy</li>
-        <li>Copyright &copy; <script>document.write(new Date().getFullYear())</script> The Bath Tub Society</li>
-      </ul>
-    </footer>
-    </div>
-    <script src="index.js"></script>
-  </body>
+  </main>
+
+  <footer>
+    <ul>
+      <li>Contact us</li>
+      <li>Terms and Conditions</li>
+      <li>Privacy Policy</li>
+      <li>Copyright &copy; <script>
+          document.write(new Date().getFullYear())
+        </script> The Bath Tub Society</li>
+    </ul>
+  </footer>
+  </div>
+</body>
+
 </html>
