@@ -6,239 +6,372 @@
   box-sizing: border-box;
 }
 
-nav {
-  width: 95%;
-  height: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 3%;
-}
-nav h1 {
-  font-family: "Alegreya";
-  font-style: italic, bold;
-  color: #854242;
-  font-size: 42px;
-  text-shadow: 2px 2px #EEDDDD;
-}
-nav h3 {
-  font-family: "Alegreya";
-  color: #DA9494;
-  font-size: 16px;
-  letter-spacing: 4px;
-  word-spacing: 3px;
-}
-nav ul {
-  display: flex;
-  list-style-type: none;
-}
-nav ul li {
-  margin-right: 20px;
-}
-nav ul li img {
-  width: 40px;
-  height: 40px;
-}
-nav div {
-  text-align: center;
-}
+@media screen and (min-width: 600px) {
+  nav {
+    width: 95%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 3%;
+  }
+  nav h1 {
+    font-family: "Alegreya";
+    font-style: italic, bold;
+    color: #854242;
+    font-size: 42px;
+    text-shadow: 2px 2px #EEDDDD;
+  }
+  nav h3 {
+    font-family: "Alegreya";
+    color: #DA9494;
+    font-size: 16px;
+    letter-spacing: 4px;
+    word-spacing: 3px;
+  }
+  nav ul {
+    display: flex;
+    list-style-type: none;
+  }
+  nav ul li {
+    margin-right: 20px;
+  }
+  nav ul li img {
+    width: 40px;
+    height: 40px;
+  }
+  nav div {
+    text-align: center;
+  }
 
-section {
-  height: 400px;
-  width: 100%;
-}
-
-.promotion,
-.reviews {
-  background-color: white;
-}
-.promotion h2,
-.reviews h2 {
-  color: #DC8D8D;
-  letter-spacing: 10px;
-  word-spacing: 10px;
-  text-transform: uppercase;
-  font-family: "Montserrat";
-  font-size: 18px;
-}
-
-.promotion {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.promotion--left {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-.promotion--right {
-  border: 1px solid black;
-  width: 500px;
-  height: 300px;
-}
-.promotion p {
-  font-family: "Alegreya";
-  font-size: 16px;
-  margin-top: 10px;
-}
-.promotion a {
-  font-family: "Alegreya";
-  text-transform: uppercase;
-  font-size: 26px;
-  margin-top: 20px;
-  color: #854242;
-  text-underline-offset: 5px;
-}
-.promotion a:hover {
-  color: #E0A3A3;
-}
-
-.reviews {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-}
-.reviews button {
-  width: 260px;
-  height: 40px;
-  background-color: white;
-  border: solid 2px #DC8D8D;
-  font-size: 16px;
-  font-family: "Alegreya";
-  text-transform: uppercase;
-  font-weight: bold;
-}
-.reviews button:hover {
-  color: white;
-  background-color: #DC8D8D;
-}
-
-.review {
-  width: 50%;
-  text-align: center;
-  font-family: "Alegreya";
-  color: #562121;
-}
-.review .text {
-  letter-spacing: 2px;
-  font-size: 18px;
-  font-style: italic;
-}
-.review .author {
-  margin-top: 10px;
-  letter-spacing: 1px;
-  font-weight: bold;
-}
-
-.buildset,
-.about {
-  background-color: #E0A3A3;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-}
-.buildset h2,
-.about h2 {
-  color: #EEDDDD;
-  letter-spacing: 10px;
-  word-spacing: 10px;
-  text-transform: uppercase;
-  font-family: "Montserrat";
-  font-size: 18px;
-}
-.buildset div,
-.about div {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.buildset div img,
-.about div img {
-  width: 190px;
-  height: 160px;
-  margin: 5px;
-}
-.buildset button,
-.about button {
-  width: 260px;
-  height: 40px;
-  background-color: #EEDDDD;
-  border: solid 2px #DC8D8D;
-  font-size: 16px;
-  font-family: "Alegreya";
-  text-transform: uppercase;
-  font-weight: bold;
-}
-.buildset button:hover,
-.about button:hover {
-  color: white;
-  background-color: #DC8D8D;
-}
-
-.about p {
-  color: #854242;
-  text-align: center;
-  font-weight: bold;
-  letter-spacing: 1px;
-  font-family: "Alegreya";
-}
-.about--icon {
-  width: 50px;
-  height: 50px;
-  border: 1px solid black;
-  margin-bottom: 10px;
-}
-.about a {
-  color: #854242;
-  text-decoration: none;
-  letter-spacing: 1px;
-  font-family: "Alegreya";
-  font-weight: bold;
-}
-.about a:hover {
-  color: #EEDDDD;
-}
-.about ul {
-  list-style-type: none;
-  display: flex;
-}
-.about ul li {
-  color: white;
-  font-family: "Alegreya";
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.about ul li:nth-child(1) {
-  margin-right: 150px;
-}
-.about ul li:nth-child(2) {
-  margin-right: 150px;
-}
-
-footer {
-  background-color: white;
-  font-family: "Alegreya";
-}
-footer ul {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  list-style-type: none;
-  margin: 5px 20px 5px;
-}
-footer ul li {
-  margin-left: 20px;
-}
-
-@media screen and (max-width: 600px) {
   section {
-    height: 150px;
+    height: 400px;
     width: 100%;
+  }
+
+  .mobile-pic {
+    display: none;
+  }
+
+  .promotion,
+.reviews {
+    background-color: white;
+  }
+  .promotion h2,
+.reviews h2 {
+    color: #DC8D8D;
+    letter-spacing: 10px;
+    word-spacing: 10px;
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    font-size: 18px;
+  }
+
+  .promotion {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .promotion--left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .promotion--right {
+    border: 1px solid black;
+    width: 500px;
+    height: 300px;
+  }
+  .promotion p {
+    font-family: "Alegreya";
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  .promotion a {
+    font-family: "Alegreya";
+    text-transform: uppercase;
+    font-size: 26px;
+    margin-top: 20px;
+    color: #854242;
+    text-underline-offset: 5px;
+  }
+  .promotion a:hover {
+    color: #E0A3A3;
+  }
+
+  .reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .reviews button {
+    width: 260px;
+    height: 40px;
+    background-color: white;
+    border: solid 2px #DC8D8D;
+    font-size: 16px;
+    font-family: "Alegreya";
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .reviews button:hover {
+    color: white;
+    background-color: #DC8D8D;
+  }
+
+  .review {
+    width: 50%;
+    text-align: center;
+    font-family: "Alegreya";
+    color: #562121;
+  }
+  .review .text {
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-style: italic;
+  }
+  .review .author {
+    margin-top: 10px;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+
+  .buildset,
+.about {
+    background-color: #E0A3A3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .buildset h2,
+.about h2 {
+    color: #EEDDDD;
+    letter-spacing: 10px;
+    word-spacing: 10px;
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    font-size: 18px;
+  }
+  .buildset div,
+.about div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .buildset div img,
+.about div img {
+    width: 190px;
+    height: 160px;
+    margin: 5px;
+  }
+  .buildset button,
+.about button {
+    width: 260px;
+    height: 40px;
+    background-color: #EEDDDD;
+    border: solid 2px #DC8D8D;
+    font-size: 16px;
+    font-family: "Alegreya";
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .buildset button:hover,
+.about button:hover {
+    color: white;
+    background-color: #DC8D8D;
+  }
+
+  .about p {
+    color: #854242;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: "Alegreya";
+  }
+  .about--icon {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+  }
+  .about--mobile {
+    display: none;
+  }
+  .about a {
+    color: #854242;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-family: "Alegreya";
+    font-weight: bold;
+  }
+  .about a:hover {
+    color: #EEDDDD;
+  }
+  .about ul {
+    list-style-type: none;
+    display: flex;
+  }
+  .about ul li {
+    color: white;
+    font-family: "Alegreya";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .about ul li:nth-child(1) {
+    margin-right: 150px;
+  }
+  .about ul li:nth-child(2) {
+    margin-right: 150px;
+  }
+
+  footer {
+    background-color: white;
+    font-family: "Alegreya";
+  }
+  footer ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+    margin: 5px 20px 5px;
+  }
+  footer ul li {
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  body {
+    background-color: #E0A3A3;
+    color: #562121;
+  }
+  body h2 {
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    font-size: 1.5em;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5px 10px 0 10px;
+  }
+  nav h1 {
+    font-size: 24px;
+    font-family: "Alegreya";
+    font-style: italic, bold;
+    color: #854242;
+    text-shadow: 1px 1px 1px #EEDDDD;
+  }
+  nav h3 {
+    display: none;
+  }
+  nav ul {
+    display: flex;
+    list-style-type: none;
+  }
+
+  .promotion,
+.about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 7.5px;
+  }
+  .promotion p,
+.about p {
+    font-family: "Alegreya";
+  }
+
+  .mobile-pic {
+    display: block;
+    margin-top: 10px;
+  }
+  .mobile-pic img {
+    width: 100%;
+  }
+
+  .promotion--pic {
+    display: none;
+  }
+  .promotion h2 {
+    color: #EEDDDD;
+  }
+  .promotion a {
+    margin-top: 15px;
+    width: 90%;
+    height: 40px;
+    background-color: #EEDDDD;
+    border: solid 2px #DC8D8D;
+    font-size: 16px;
+    font-family: "Alegreya";
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #DA9494;
+  }
+  .promotion a:hover {
+    color: white;
+    background-color: #DC8D8D;
+  }
+
+  .about {
+    background-color: #EEDDDD;
+  }
+  .about h2 {
+    color: #854242;
+  }
+  .about--web {
+    display: none;
+  }
+  .about ul {
+    list-style-type: none;
+    text-decoration: underline;
+    font-family: "Alegreya";
+    font-weight: bold;
+    color: #DA9494;
+    text-underline-offset: 5px;
+  }
+  .about a {
+    margin-top: 15px;
+    width: 90%;
+    height: 40px;
+    background-color: #DC8D8D;
+    border: solid 2px #DC8D8D;
+    font-size: 16px;
+    font-family: "Alegreya";
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  .about a:hover {
+    color: #DA9494;
+    background-color: #EEDDDD;
+  }
+
+  .buildset,
+.reviews {
+    display: none;
+  }
+
+  footer {
+    margin: 10px 0 5px 5px;
+    font-family: "Alegreya";
   }
 }

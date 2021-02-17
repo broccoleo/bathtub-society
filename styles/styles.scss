@@ -2,267 +2,425 @@
 @import '../styles/_typography';
 @import '../styles/_variables';
 
-nav {
-    width: 95%;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 3%;
 
-    h1 {
-        font-family: $primary-font;
-        font-style: italic, bold;
-        color: $emphasis;
-        font-size: $page-title;
-        text-shadow: 2px 2px $soft-pink;
-    }
-
-    h3 {
-        font-family: $primary-font;
-        color: $medium-pink;
-        font-size: $button-size;
-        letter-spacing: 4px;
-        word-spacing: 3px;
-    }
-
-    ul {
+@media screen and (min-width:600px) {
+    nav {
+        width: 95%;
+        height: 100px;
         display: flex;
-        list-style-type: none;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 3%;
 
-        li {
-            margin-right: 20px;
+        h1 {
+            font-family: $primary-font;
+            font-style: italic, bold;
+            color: $emphasis;
+            font-size: $page-title;
+            text-shadow: 2px 2px $soft-pink;
+        }
 
-            img {
-                width: 40px;
-                height: 40px;
+        h3 {
+            font-family: $primary-font;
+            color: $medium-pink;
+            font-size: $button-size;
+            letter-spacing: 4px;
+            word-spacing: 3px;
+        }
+
+        ul {
+            display: flex;
+            list-style-type: none;
+
+            li {
+                margin-right: 20px;
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+
+        div {
+            text-align: center;
+        }
+    }
+
+    section {
+        height: 400px;
+        width: 100%;
+    }
+
+    .mobile-pic {
+        display: none;
+    }
+
+    .promotion,
+    .reviews {
+        background-color: white;
+
+        h2 {
+            color: $background-decor;
+            letter-spacing: 10px;
+            word-spacing: 10px;
+            text-transform: uppercase;
+            font-family: $secondary-font;
+            font-size: $section-title;
+        }
+    }
+
+    .promotion {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        &--left {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        &--right {
+            border: 1px solid black;
+            width: 500px;
+            height: 300px;
+        }
+
+        p {
+            font-family: $primary-font;
+            font-size: $button-size;
+            margin-top: 10px;
+        }
+
+        a {
+            font-family: $primary-font;
+            text-transform: uppercase;
+            font-size: $sub-title;
+            margin-top: 20px;
+            color: $emphasis;
+            text-underline-offset: 5px;
+
+            &:hover {
+                color: $main-background;
             }
         }
     }
 
-    div {
-        text-align: center;
-    }
-}
-
-section {
-    height: 400px;
-    width: 100%;
-}
-
-.promotion,
-.reviews {
-    background-color: white;
-
-    h2 {
-        color: $background-decor;
-        letter-spacing: 10px;
-        word-spacing: 10px;
-        text-transform: uppercase;
-        font-family: $secondary-font;
-        font-size: $section-title;
-    }
-}
-
-.promotion {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    &--left {
+    .reviews {
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-
-    &--right {
-        border: 1px solid black;
-        width: 500px;
-        height: 300px;
-    }
-
-    p {
-        font-family: $primary-font;
-        font-size: $button-size;
-        margin-top: 10px;
-    }
-
-    a {
-        font-family: $primary-font;
-        text-transform: uppercase;
-        font-size: $sub-title;
-        margin-top: 20px;
-        color: $emphasis;
-        text-underline-offset: 5px;
-
-        &:hover {
-            color: $main-background;
-        }
-    }
-}
-
-.reviews {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-
-    button {
-        width: 260px;
-        height: 40px;
-        background-color: white;
-        border: solid 2px $background-decor;
-        font-size: $button-size;
-        font-family: $primary-font;
-        text-transform: uppercase;
-        font-weight: bold;
-
-        &:hover {
-            color: white;
-            background-color: $background-decor;
-        }
-    }
-}
-
-.review {
-    width: 50%;
-    text-align: center;
-    font-family: $primary-font;
-    color: #562121;
-
-    .text {
-        letter-spacing: 2px;
-        font-size: $section-title;
-        font-style: italic;
-    }
-
-    .author {
-        margin-top: 10px;
-        letter-spacing: 1px;
-        font-weight: bold;
-    }
-}
-
-
-.buildset,
-.about {
-    background-color: $main-background;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-
-    h2 {
-        color: $soft-pink;
-        letter-spacing: 10px;
-        word-spacing: 10px;
-        text-transform: uppercase;
-        font-family: $secondary-font;
-        font-size: $section-title;
-    }
-
-    div {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-
-        img {
-            width: 190px;
-            height: 160px;
-            margin: 5px;
-        }
-    }
-
-    button {
-        width: 260px;
-        height: 40px;
-        // background: linear-gradient($soft-pink, white);
-        background-color: $soft-pink;
-        border: solid 2px $background-decor;
-        font-size: $button-size;
-        font-family: $primary-font;
-        text-transform: uppercase;
-        font-weight: bold;
-
-        &:hover {
-            color: white;
-            background-color: $background-decor;
-        }
-    }
-}
-
-.about {
-    p {
-        color: $emphasis;
-        text-align: center;
-        font-weight: bold;
-        letter-spacing: 1px;
-        font-family: $primary-font;
-    }
-
-    &--icon {
-        width: 50px;
-        height: 50px;
-        border: 1px solid black;
-        margin-bottom: 10px;
-    }
-
-    a {
-        color: $emphasis;
-        text-decoration: none;
-        letter-spacing: 1px;
-        font-family: $primary-font;
-        font-weight: bold;
-
-        &:hover {
-            color: $soft-pink;
-        }
-    }
-
-    ul {
-        list-style-type: none;
-        display: flex;
-
-        li {
-            color: white;
-            font-family: $primary-font;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        li:nth-child(1) {
-            margin-right: 150px;
-        }
-
-        li:nth-child(2) {
-            margin-right: 150px;
-        }
-    }
-}
-
-footer {
-    background-color: white;
-    font-family: $primary-font;
-
-    ul {
-        display: flex;
-        justify-content: flex-end;
         align-items: center;
-        list-style-type: none;
-        margin: 5px 20px 5px;
+        justify-content: space-evenly;
 
-        li {
-            margin-left: 20px;
+        button {
+            width: 260px;
+            height: 40px;
+            background-color: white;
+            border: solid 2px $background-decor;
+            font-size: $button-size;
+            font-family: $primary-font;
+            text-transform: uppercase;
+            font-weight: bold;
+
+            &:hover {
+                color: white;
+                background-color: $background-decor;
+            }
+        }
+    }
+
+    .review {
+        width: 50%;
+        text-align: center;
+        font-family: $primary-font;
+        color: $main-text;
+
+        .text {
+            letter-spacing: 2px;
+            font-size: $section-title;
+            font-style: italic;
+        }
+
+        .author {
+            margin-top: 10px;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+    }
+
+
+    .buildset,
+    .about {
+        background-color: $main-background;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        h2 {
+            color: $soft-pink;
+            letter-spacing: 10px;
+            word-spacing: 10px;
+            text-transform: uppercase;
+            font-family: $secondary-font;
+            font-size: $section-title;
+        }
+
+        div {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            img {
+                width: 190px;
+                height: 160px;
+                margin: 5px;
+            }
+        }
+
+        button {
+            width: 260px;
+            height: 40px;
+            background-color: $soft-pink;
+            border: solid 2px $background-decor;
+            font-size: $button-size;
+            font-family: $primary-font;
+            text-transform: uppercase;
+            font-weight: bold;
+
+            &:hover {
+                color: white;
+                background-color: $background-decor;
+            }
+        }
+    }
+
+    .about {
+        p {
+            color: $emphasis;
+            text-align: center;
+            font-weight: bold;
+            letter-spacing: 1px;
+            font-family: $primary-font;
+        }
+
+        &--icon {
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+        }
+
+        &--mobile {
+            display: none;
+        }
+
+        a {
+            color: $emphasis;
+            text-decoration: none;
+            letter-spacing: 1px;
+            font-family: $primary-font;
+            font-weight: bold;
+
+            &:hover {
+                color: $soft-pink;
+            }
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+
+            li {
+                color: white;
+                font-family: $primary-font;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            li:nth-child(1) {
+                margin-right: 150px;
+            }
+
+            li:nth-child(2) {
+                margin-right: 150px;
+            }
+        }
+    }
+
+    footer {
+        background-color: white;
+        font-family: $primary-font;
+
+        ul {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            list-style-type: none;
+            margin: 5px 20px 5px;
+
+            li {
+                margin-left: 20px;
+            }
         }
     }
 }
 
 @media screen and (max-width:600px) {
-    section {
-        height: 150px;
+    body {
+        background-color: $main-background;
+        color: $main-text;
+
+        h2 {
+            text-transform: uppercase;
+            font-family: $secondary-font;
+            font-size: 1.5em;
+        }
+    }
+
+    nav {
         width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 5px 10px 0 10px;
+
+        h1 {
+            font-size: $mobile-title;
+            font-family: $primary-font;
+            font-style: italic, bold;
+            color: $emphasis;
+            text-shadow: 1px 1px 1px $soft-pink;
+        }
+
+        h3 {
+            display: none;
+        }
+
+        ul {
+            display: flex;
+            list-style-type: none;
+        }
+    }
+
+    .promotion,
+    .about {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 7.5px;
+
+        p {
+
+            font-family: $primary-font;
+        }
+
+    }
+
+    .mobile-pic {
+        display: block;
+        margin-top: 10px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .promotion {
+        &--pic {
+            display: none;
+        }
+
+        h2 {
+
+            color: $soft-pink;
+        }
+
+
+        a {
+            margin-top: 15px;
+            width: 90%;
+            height: 40px;
+            background-color: $soft-pink;
+            border: solid 2px $background-decor;
+            font-size: $button-size;
+            font-family: $primary-font;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $medium-pink;
+
+            &:hover {
+                color: white;
+                background-color: $background-decor;
+            }
+        }
+    }
+
+    .about {
+        background-color: $soft-pink;
+
+        h2 {
+            color: $emphasis;
+        }
+
+        &--web {
+            display: none;
+        }
+
+        ul {
+            list-style-type: none;
+            text-decoration: underline;
+            font-family: $primary-font;
+            font-weight: bold;
+            color: $medium-pink;
+            text-underline-offset: 5px;
+        }
+
+
+        a {
+            margin-top: 15px;
+            width: 90%;
+            height: 40px;
+            background-color: $background-decor;
+            border: solid 2px $background-decor;
+            font-size: $button-size;
+            font-family: $primary-font;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            color: white;
+
+            &:hover {
+
+
+                color: $medium-pink;
+                background-color: $soft-pink;
+            }
+        }
+    }
+
+    .buildset,
+    .reviews {
+        display: none;
+    }
+
+    footer {
+        margin: 10px 0 5px 5px;
+        font-family: $primary-font;
     }
 }
